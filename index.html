@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Lights</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header *{
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            background-color: dimgray;
+        }
+        .logo{
+            color: aliceblue;
+            letter-spacing: 5px;
+            font-size: 20px;
+        }
+        .nav-links{
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+        }
+        .nav-links li{
+            list-style: none;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: aliceblue;
+            letter-spacing: 2px;
+        }
+        .nav-links a:hover{
+            text-decoration: underline;
+            color: lightblue;
+        }
+        /* FOOTER */
+        footer *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        footer{
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            background-color: lightgray;
+        }
+        .footer-top, .footer-bot{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            flex-flow: row wrap;
+        }
+        .footer-top{
+            text-align: center;
+            width: 50%;
+        }
+        .footer-section .box{
+            flex-basis: 50%;
+            padding: 10px 20px;
+    
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+        <h3>SL</h3>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Music</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="social box">
+                <h3>SOUTHERN LIGHTS <span>SOCIAL</span></h3>
+                <ul>
+                    <li>FB</li>
+                    <li>IG</li>
+                    <li>YT</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div class="newsletter box">
+                <h3>JOIN THE <span>EMAIL LIST</span></h3>
+                 <form>
+                    <input type="text" placeholder="Enter you email">
+                    <button>GO</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="footer-bot">
+        ©2022 All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>
