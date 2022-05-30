@@ -1,3 +1,7 @@
+@font-face {
+    font-family: ferrum;
+    src: url(font\Ferrum.otf);
+}
 body{
     color: aliceblue;
 }
@@ -29,7 +33,7 @@ body{
     display: block;
 }
 .logo{
-    font-family: 'Ferrum', sans-serif;
+    font-family: ferrum;
     font-size: xx-large;
     pointer-events: none;
 }
@@ -39,7 +43,7 @@ nav .logo:hover{
     font-size: xx-large;
 }
 h1{
-    font-family: 'Ferrum', sans-serif;
+    font-family: ferrum;
     font-size: 5vw;
     color: aliceblue;
     text-align: center;
