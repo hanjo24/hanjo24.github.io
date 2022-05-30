@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'ferrum';
-    src: url(font\Ferrum.otf) format('opentype');
+    src: url(font/Ferrum.otf) format('opentype');
 }
 body{
     color: aliceblue;
@@ -130,3 +130,7 @@ h5{
     font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
 }
+video {
+    width: 100%;
+    height: auto;
+  }
