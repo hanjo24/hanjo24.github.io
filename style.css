@@ -1,0 +1,128 @@
+body{
+    color: aliceblue;
+}
+.background-image{
+    background-image: url(images/cover1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    background-attachment: fixed;
+}
+.nav-container{
+    background-color: rgba(38, 50, 56, 0.6);
+}
+.nav-link{
+    color: aliceblue;
+}
+.nav a{
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: aliceblue;
+}
+.nav a:hover{
+    color: #B71C1C;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    font-size: large;
+}
+.nav .dropdown:hover .dropdown-menu{
+    display: block;
+}
+.logo{
+    font-family: 'Ferrum', sans-serif;
+    font-size: xx-large;
+    pointer-events: none;
+}
+nav .logo:hover{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: xx-large;
+}
+h1{
+    font-family: 'Ferrum', sans-serif;
+    font-size: 5vw;
+    color: aliceblue;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.table{
+    color: aliceblue;
+    table-layout: auto;
+    width: 600px;
+    margin-top: 50px;
+}
+.table a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px;
+}
+.table-hover tbody tr:hover td {
+    background-color: #FFCDD2;
+}
+.blink {
+    animation: blink 1s steps(1, end) infinite;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #B71C1C;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+@media screen and (max-width:540px) {
+    .table{
+        width: auto;
+    }
+}
+.footer {
+    color: aliceblue;
+}
+.footer a, .footer button{
+    color: aliceblue;
+}
+.footer-bot{
+    border-top: black 2px solid;
+    justify-content: center;
+}
+.aboutus .aboutphoto{
+    width: 300px;
+    border-radius: 10px;
+}
+h2{
+    text-align: center;
+    font-size: 2vw;
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.bandposition h3{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+h5{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+.musicvideo iframe{
+    width: 560px;
+    height: 315px; 
+    padding: 5px;
+
+}
+.submit-bot{
+    width: 400px;
+}
+.contactus label{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}

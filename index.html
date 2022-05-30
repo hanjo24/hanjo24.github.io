@@ -9,128 +9,167 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <title>Project</title>
-    <style>
-        body{
-            background-image: url("images/cover.png");
-            background-repeat: no-repeat;
-        }
-        .nav-container{
-            background-color: rgb(46, 44, 44);
-        }
-        .nav-link{
-            color: aliceblue;
-        }
-        .logo{
-            font-family: 'Ferrum', sans-serif;
-            font-size: xx-large;
-        }
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: rgb(46, 44, 44);
-            color: aliceblue;
-        }
-        .footer a, .footer button{
-            color: aliceblue;
-        }
-        /* footer{
-            margin-right: 50px;
-            margin-left: 50px;
-        } */
-        /* .row{
-            border-bottom: black solid 2px;
-            text-align: center;
-        } */
-        .footer-top{
-            margin-left: 200px;
-            margin-right: 200px;
-        }
-        .footer-bot{
-            border-top: black 2px solid;
-            justify-content: center;
-        }
-        @media screen and (max-width:740px) {
-            .footer-top{
-                margin: 0;
-            }
-            iframe{
-                width: 300px;
-            }
-            
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>SouthernLights</title>
 </head>
 <body>
+    <div class="background-image">
     <!-- NAV BAR -->
-    <div class="container-sm-fluid nav-container ">
+    <div class="container-sm-fluid nav-container sticky-top">
     <nav class="nav justify-content-center align-items-center">
-        <a href="" class="nav-link logo">Southern Lights</a>
-        <a href="" class="nav-link">Home</a>
-        <a href="" class="nav-link">About</a>
-        <a href="" class="nav-link">Music</a>
-        <a href="" class="nav-link">Gallery</a>
-        <a href="" class="nav-link">Contact</a>
+        <a href="" class="nav-link logo">SL</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="music.html" class="nav-link">Music</a>
+        <div class="dropdown">
+        <a href="gallery.html" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
+        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="gallery.html#video">Video</a></li>
+            <li><a class="dropdown-item" href="gallery.html#photo">Photo</a></li>
+          </ul>
+        </div>
+        <a href="contact.html" class="nav-link">Contact</a>
     </nav>
     </div>
-    
-  
 
-
-    <div class="container-fluid footer">
-        <!-- <footer class="mt-4 "> -->
-            <div class="row mt-4 footer-top">
-                <!-- <div class="col">
-                <div class="d-flex justify-content-start mt-5">
-            
-                <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-facebook"></i></a>
-                
-                <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-youtube"></i></a>
-                
-                <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-instagram"></i></a>
-                
-                <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-twitter"></i></a>
-
-                <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-spotify"></i></a>
-
-                </div>
-                </div> -->
-            
+    <!-- content -->
+        <h1>SOUTHERNLIGHTS</h1>
+        <table class="table table-hover container-sm">
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="" data-bs-toggle="modal" data-bs-target="#boxmodal">Yellow Room Night</a>
+                        <div class="modal fade" id="boxmodal" aria-labelledby="boxmodallabel" aria-hidden="true" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="boxmodallabel">Yellow Room Night</h5>
+                                <button class="btn-close bg-secondary" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body"><img src="images/yellowroomnight.jpg" class="w-100"alt="YellowRoomNight"></div>
+                        </div>
+                        </div>
+                        </div>
+                    </td>
+                    <td>June 17, 2022</td>
+                    <td>8:00PM</td>
+                </tr>
+                <tr>
+                    <td><a href="" data-bs-toggle="modal" data-bs-target="#boxmodal1">Lumina</a>
+                        <div class="modal fade" id="boxmodal1" aria-labelledby="boxmodallabel1" aria-hidden="true" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="boxmodallabel1">Lumina</h5>
+                                <button class="btn-close bg-secondary" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body"><img src="images/lumina.jpg" class="w-100"alt="Lumina"></div>
+                        </div>
+                        </div>
+                        </div>
+                    </td>
+                    <td>July 05, 2022</td>
+                    <td>5:00PM</td>
+                </tr><tr>
+                    <td><a href="" data-bs-toggle="modal" data-bs-target="#boxmodal2">Letters & Music</a>
+                        <div class="modal fade" id="boxmodal2" aria-labelledby="boxmodallabel2" aria-hidden="true" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="boxmodallabel2">Letters & Music</h5>
+                                <button class="btn-close bg-secondary" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body"><img src="images/letters.jpg" class="w-100"alt="Letters & Music"></div>
+                        </div>
+                        </div>
+                        </div>
+                    </td>
+                    <td>July 15, 2022</td>
+                    <td>1:00PM</td>
+                </tr>
+                <tr>
+                    <td><a href="" data-bs-toggle="modal" data-bs-target="#boxmodal3">Sunday Service</a>
+                        <div class="modal fade" id="boxmodal3" aria-labelledby="boxmodallabel3" aria-hidden="true" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="boxmodallabel3">Sunday Service</h5>
+                                <button class="btn-close bg-secondary" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body"><img src="images/sunday.jpg" class="w-100"alt="Sunday Service"></div>
+                        </div>
+                        </div>
+                        </div>
+                    </td>
+                    <td>August 02, 2022</td>
+                    <td>11:00AM</td>
+                </tr>
+                <tr>
+                    <td><a href="" data-bs-toggle="modal" data-bs-target="#boxmodal4">Wish 107.5</a>
+                        <div class="modal fade" id="boxmodal4" aria-labelledby="boxmodallabel4" aria-hidden="true" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="boxmodallabel4">Wish 107.5</h5>
+                                <button class="btn-close bg-secondary" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body"><img src="images/wish.jpg" class="w-100"alt="Wish"></div>
+                        </div>
+                        </div>
+                        </div>
+                    </td>
+                    <td>September 22, 2022</td>
+                    <td>7:00PM</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="p-5">
+            <div class="blink mb-5"><a href="music.html" class="nav-link"><h3>NEW SONG AVAILABLE !!</h3></a></div>
+        <video width="800" height="600" autoplay loop muted mediagroup="none" class="container-sm justify-content-center d-flex">
+            <source src="images/promo.mp4" type="video/mp4">
+          </video>
+        </div>
+    <!-- footer -->
+        <div class="container-sm footer">
+            <div class="row footer-top pt-3">
             <div class="col">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/33wLJl2TFmw8mEDztLnG2F?utm_source=generator" width="500px" height="200" frameBorder="" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/33wLJl2TFmw8mEDztLnG2F?utm_source=generator" width="90%" height="200" frameBorder="" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
-
             <div class="col">
-                <div>
-                <h5 class="text-uppercase mb-4 pb-1">Join Newsletter</h5>
+                <h5 class="text-uppercase mb-4 pb-1">Join Newsletter and be updated with our new songs !!</h5>
                 <div class="row">
                 <div class="col">
+                <form method="get">
                 <input type="email" class="form-control form-control-lg" placeholder="Enter Email" required>
                 </div>
                 <div class="col">
                 <input type="text" class="form-control form-control-lg" placeholder="Enter Name" required>
                 </div>
                 </div>
-                <button type="button" class="btn mt-4">Submit</button>
-                </div>
+                <button type="submit" class="btn mt-4 btn btn-outline-light">Submit</button>
+                </form>
                 <div class="d-flex justify-content-center">
-                    <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-facebook"></i></a>
-                    <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-youtube"></i></a>
-                    <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-instagram"></i></a>
-                    <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-twitter"></i></a>
-                    <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-spotify"></i></a>
-                    <a type="button" class="btn btn-floating btn-lg"><i class="bi bi-apple"></i></a>
-                    </div>
-
+                    <a href="https://www.facebook.com/southernlightsph" type="button" class="btn btn-lg"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.youtube.com/c/YellowRoomMusic" type="button" class="btn btn-lg"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.instagram.com/southernlightsph/" type="button" class="btn btn-lg"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com/yrmusicofficial" type="button" class="btn btn-lg"><i class="bi bi-twitter"></i></a>
+                    <a href="https://open.spotify.com/artist/33wLJl2TFmw8mEDztLnG2F" type="button" class="btn btn-lg"><i class="bi bi-spotify"></i></a>
+                    <a href="https://music.apple.com/us/artist/southern-lights/1582685735" type="button" class="btn btn-lg"><i class="bi bi-apple"></i></a>
+                </div>
             </div>
             </div>
             <div class="row footer-bot p-2">
-                © 2022 Copyright
+                Copyright © 2022 SouthernLights. All Rights Reserved
             </div>    
-        <!-- </footer> -->
-    </div>
-
+        </div>
+</div>
+    
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
