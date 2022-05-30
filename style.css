@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'ferrum';
-    src: url(font\Ferrum.otf);
+    src: url(font\Ferrum.otf) format('opentype');
 }
 body{
     color: aliceblue;
